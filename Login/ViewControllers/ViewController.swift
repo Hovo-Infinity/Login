@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
     }
     
-    func login() {
+    private func login() {
         loginManager.login { (user, error) in
             if let err = error {
                 print(err.localizedDescription)
@@ -41,6 +41,10 @@ class ViewController: UIViewController {
         login()
     }
     
+    @IBAction func VKLogin() {
+        loginManager = VKManager()
+        login()
+    }
     
 }
 

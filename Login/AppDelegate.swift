@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import Firebase
+import VK_ios_sdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         FirebaseApp.configure()
+        VKSdk.initialize(withAppId: "6606115")
+        VKDelegate.initializeShared()
         return true
     }
 
@@ -50,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                                             open: url,
                                                                             sourceApplication: sourceApplication,
                                                                             annotation: annotation)
+        VKSdk.processOpen(url, fromApplication: sourceApplication)
         return handles
     }
 

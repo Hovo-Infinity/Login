@@ -32,6 +32,13 @@
                                     <action selector="FIRLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOi-ej-phc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcU-b8-KfF">
+                                <rect key="frame" x="152.5" y="248.5" width="70" height="30"/>
+                                <state key="normal" title="Vkontakte"/>
+                                <connections>
+                                    <action selector="VKLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ar-em-6gK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -39,6 +46,8 @@
                             <constraint firstItem="JKa-p3-3Mj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EnX-c2-9qo"/>
                             <constraint firstItem="WSQ-kR-DzS" firstAttribute="top" secondItem="JKa-p3-3Mj" secondAttribute="bottom" constant="40" id="IWJ-Lq-aek"/>
                             <constraint firstItem="JKa-p3-3Mj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZPV-dB-BTZ"/>
+                            <constraint firstItem="JKa-p3-3Mj" firstAttribute="top" secondItem="zcU-b8-KfF" secondAttribute="bottom" constant="40" id="bm1-i6-hTh"/>
+                            <constraint firstItem="zcU-b8-KfF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cIZ-oI-ev9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -65,7 +74,7 @@
                                 <rect key="frame" x="50" y="260.5" width="275" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login With" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-cn-4mp">
                                 <rect key="frame" x="0.0" y="70" width="375" height="20.5"/>

@@ -10,5 +10,6 @@ target 'Login' do
   pod 'FBSDKLoginKit'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'VK-ios-sdk'
   
 end

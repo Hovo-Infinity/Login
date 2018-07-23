@@ -38,12 +38,14 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - VK-ios-sdk (1.4.6)
 
 DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - Firebase/Auth
   - Firebase/Core
+  - VK-ios-sdk
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -58,6 +60,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - nanopb
+    - VK-ios-sdk
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -71,7 +74,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
 
-PODFILE CHECKSUM: be4077a1e19399619b30e86fd8e35232947dd8ab
+PODFILE CHECKSUM: 96a35c80382c9b0d6e8cb4c10c0c35cf36375d86
 
 COCOAPODS: 1.5.3
