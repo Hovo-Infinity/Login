@@ -7,7 +7,8 @@ Used cocoa pods for integrate SDKs, for auth
  
  * [Facebook iOS SDK](https://developers.facebook.com/docs/ios/)
  * [VK iOS SDK](https://vk.com/dev/ios_sdk)
- * [Firebase iOS SDK](https://firebase.google.com/docs/storage/ios/start)
+ * [Firebase Auth iOS SDK](https://firebase.google.com/docs/auth/ios/start)
+ * [Google Sign In iOS SDK](https://developers.google.com/identity/sign-in/ios/start-integrating)
 
 
 # Usage
