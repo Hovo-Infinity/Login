@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A412523C210700BB0068038C /* GIDDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412523B210700BB0068038C /* GIDDelegate.swift */; };
+		A412523E210703490068038C /* GoogleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412523D210703490068038C /* GoogleManager.swift */; };
+		A412524021071BAF0068038C /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = A412523F21071BAF0068038C /* credentials.plist */; };
 		A45490B921021B83001D6282 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A45490B821021B83001D6282 /* GoogleService-Info.plist */; };
 		A45490BD21021FC2001D6282 /* CustomLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45490BC21021FC2001D6282 /* CustomLoginViewController.swift */; };
 		A45490C021022138001D6282 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45490BF21022138001D6282 /* FirebaseManager.swift */; };
@@ -29,6 +32,9 @@
 		27B9A4C41FD16B9B982D8FEE /* Pods-Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login.release.xcconfig"; path = "Pods/Target Support Files/Pods-Login/Pods-Login.release.xcconfig"; sourceTree = "<group>"; };
 		336F0CE4983B1AE7091778ED /* Pods-Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Login.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Login/Pods-Login.debug.xcconfig"; sourceTree = "<group>"; };
 		8C9E318788F80AF728687AAC /* Pods_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A412523B210700BB0068038C /* GIDDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIDDelegate.swift; sourceTree = "<group>"; };
+		A412523D210703490068038C /* GoogleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleManager.swift; sourceTree = "<group>"; };
+		A412523F21071BAF0068038C /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		A45490B821021B83001D6282 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A45490BC21021FC2001D6282 /* CustomLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginViewController.swift; sourceTree = "<group>"; };
 		A45490BF21022138001D6282 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -63,7 +69,9 @@
 		A45490BA21021B88001D6282 /* Google */ = {
 			isa = PBXGroup;
 			children = (
+				A412523F21071BAF0068038C /* credentials.plist */,
 				A45490B821021B83001D6282 /* GoogleService-Info.plist */,
+				A412523B210700BB0068038C /* GIDDelegate.swift */,
 			);
 			path = Google;
 			sourceTree = "<group>";
@@ -84,6 +92,7 @@
 				A48470902101B7CB000D4BF5 /* FBManager.swift */,
 				A45490BF21022138001D6282 /* FirebaseManager.swift */,
 				A45490C62105AC6E001D6282 /* VKManager.swift */,
+				A412523D210703490068038C /* GoogleManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 				A48470762101A842000D4BF5 /* Frameworks */,
 				A48470772101A842000D4BF5 /* Resources */,
 				29BC6405507AAD75157CB8D1 /* [CP] Embed Pods Frameworks */,
+				F3D1EF1D52BA03B3DC97993F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +246,7 @@
 			files = (
 				A48470872101A844000D4BF5 /* LaunchScreen.storyboard in Resources */,
 				A45490B921021B83001D6282 /* GoogleService-Info.plist in Resources */,
+				A412524021071BAF0068038C /* credentials.plist in Resources */,
 				A48470842101A844000D4BF5 /* Assets.xcassets in Resources */,
 				A48470822101A842000D4BF5 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +283,7 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework",
@@ -282,6 +294,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VK_ios_sdk.framework",
@@ -292,6 +305,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Login/Pods-Login-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3D1EF1D52BA03B3DC97993F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Login/Pods-Login-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Login/Pods-Login-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -300,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A484708F2101A8F3000D4BF5 /* LoginProtocol.swift in Sources */,
+				A412523E210703490068038C /* GoogleManager.swift in Sources */,
 				A45490BD21021FC2001D6282 /* CustomLoginViewController.swift in Sources */,
 				A45490C72105AC6E001D6282 /* VKManager.swift in Sources */,
 				A45490C22102227E001D6282 /* UIViewControllerExtension.swift in Sources */,
@@ -310,6 +342,7 @@
 				A484707F2101A842000D4BF5 /* ViewController.swift in Sources */,
 				A48470932101BE92000D4BF5 /* UserModel.swift in Sources */,
 				A484707D2101A842000D4BF5 /* AppDelegate.swift in Sources */,
+				A412523C210700BB0068038C /* GIDDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,10 +21,12 @@ class FirabaseManager: LoginProtocol {
                 let firUser = (result as! AuthDataResult).user
                 let user = UserModel()
                 user.firstName = firUser.displayName
-                user.profileImage = UIImage(data: try! Data.init(contentsOf: firUser.photoURL ?? URL(string: "")!))
+                if let url = firUser.photoURL,
+                    let data = try? Data.init(contentsOf:url) {
+                    user.profileImage = UIImage(data: data)
+                }
                 completion(user, nil)
             }
-            
         }
         UIViewController.topViewController()?.present(loginVC, animated: true)
     }

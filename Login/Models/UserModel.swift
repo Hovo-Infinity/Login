@@ -13,5 +13,5 @@ class UserModel {
     var firstName: String?
     var lastName: String?
     var email: String?
-    var profileImage: UIImage?
+    var profileImage: UIImage? = #imageLiteral(resourceName: "avatar")
 }

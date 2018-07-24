@@ -30,8 +30,14 @@ class CustomLoginViewController: UIViewController {
             let email = emailTextField.text!
             let password = passwordTextField.text!
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                self.dismiss(animated: true)
                 self.loginComplition(result, error)
             }
         }
+    }
+    
+    
+    @IBAction func  cancel() {
+        dismiss(animated: true)
     }
 }

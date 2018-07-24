@@ -46,5 +46,10 @@ class ViewController: UIViewController {
         login()
     }
     
+    @IBAction func GIDLogin() {
+        loginManager = GoogleManager()
+        login()
+    }
+    
 }
 

@@ -6,10 +6,10 @@ target 'Login' do
   use_frameworks!
   inhibit_all_warnings!
   # Pods for Login
-  pod 'FBSDKCoreKit'  
+  pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'VK-ios-sdk'
-  
+  pod 'GoogleSignIn'
 end

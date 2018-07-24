@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import Firebase
 import VK_ios_sdk
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         FirebaseApp.configure()
         VKSdk.initialize(withAppId: "6606115")
-        VKDelegate.initializeShared()
+        let _ = VKDelegate.initializeShared()
+        GIDSignIn.sharedInstance().clientID = "799405793505-i295l997oebb6mosc8v54pjeplagqkrj.apps.googleusercontent.com"
+        let _ = GIDDelegate.initializeShared()
         return true
     }
 
@@ -53,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                                             open: url,
                                                                             sourceApplication: sourceApplication,
                                                                             annotation: annotation)
+        GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
         VKSdk.processOpen(url, fromApplication: sourceApplication)
         return handles
     }
